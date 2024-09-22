@@ -1,0 +1,744 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans';
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: rgb(35, 36, 36);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  background-color: rgb(68, 71, 209);
+  padding: 5px 25px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Josefin Sans';
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background-color: rgba(63, 96, 204, 0.795);
+}
+
+
+/* style setting */
+header {
+  background-color: rgb(194, 238, 124);
+  padding: 7rem 0;
+}
+
+.header-center {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-center h1 {
+  font-family: Bricolage Grotesque;
+  color: rgb(35, 36, 36);
+  line-height: 1.25;
+}
+
+.header-center h1 span {
+  background-color: rgb(36, 36, 36);
+  padding: 0 10px;
+  color: white;
+  text-align: center;
+}
+
+.header-center p {
+  font-size: 1.75rem;
+  margin: 2.75rem 0;
+}
+
+.btn {
+  background-color: rgb(35, 36, 36);
+  color: rgb(194, 238, 124);
+  padding: 1rem 3.875rem;
+  font-size: 1.85;
+  text-transform: uppercase;
+
+}
+
+.btn:hover {
+  background-color: rgb(60, 61, 61);
+}
+
+.section-1 {
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.content-11 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-11-title {
+  background-color: rgba(221, 221, 221, 0.705);
+  padding: 2rem;
+  width: 40%;
+  position: relative;
+}
+
+.content-11-title h3 {
+  font-size: 2.75rem;
+  color: rgb(35, 36, 36);
+}
+
+.content-11-title span i {
+  background-color: rgba(252, 252, 252, 0.671);
+  border-radius: 50%;
+  border: 1px solid rgb(179, 179, 179);
+  color: rgba(209, 209, 209, 0.897);
+  font-size: 2rem;
+  padding: 1rem;
+  transform: rotate(30deg);
+  margin-top: 4rem;
+}
+
+.content-11-text p {
+  position: absolute;
+  right: 8%;
+  bottom: 25%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 36, 36);
+  height: auto;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  line-height: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.content-12 {
+  margin: 6rem 0 2rem 0;
+}
+
+.content-12 h2 {
+  font-family: Bricolage Grotesque;
+  color: rgb(35, 36, 36);
+  line-height: 1.25;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content-12 h2 span {
+  background-color: rgb(194, 238, 124);
+  padding: 0 10px;
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.content-13 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.content-item-13 {
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.content-item-13 h4 {
+  font-size: 2rem;
+  color: rgb(46, 46, 46);
+
+}
+
+.content-item-13 p {
+  font-size: 1.15rem;
+  color: rgb(104, 104, 104);
+}
+
+/* item black */
+.item-black {
+  background-color: rgb(26, 25, 25);
+}
+
+.item-black h4 {
+  color: rgb(255, 255, 255);
+}
+
+.item-black p {
+  color: rgb(235, 234, 234);
+}
+
+/* item green */
+.item-green {
+  background-color: rgb(194, 238, 124);
+  margin-top: 1.85rem;
+
+}
+
+.item-green h4 {
+  color: rgb(26, 25, 25);
+}
+
+.item-green p {
+  color: rgb(56, 56, 56);
+}
+
+/* item grey */
+.item-grey {
+  background-color: rgba(235, 236, 234, 0.726);
+
+}
+
+.item-grey h4 {
+  color: rgb(26, 25, 25);
+}
+
+.item-grey p {
+  color: rgb(163, 162, 162);
+}
+
+/* item white */
+.item-white {
+  background-color: white;
+
+}
+
+.item-white h4 {
+  color: rgb(26, 25, 25);
+}
+
+.item-white p {
+  color: rgb(163, 162, 162);
+}
+
+/* section-2 */
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0;
+  padding: 4rem 2rem;
+  background-color: rgb(194, 238, 124);
+}
+
+
+.content-item-2 h2 {
+  font-size: 3rem;
+  color: rgb(46, 46, 46);
+}
+
+.content-item-2 p {
+  font-size: 1.5rem;
+  color: rgb(54, 54, 54);
+  width: 90%;
+  padding: 1rem 0 2rem 0;
+}
+
+.content-item-2 .btn {
+  margin-top: 2rem;
+}
+
+.main-img {
+  width: 45%;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 2rem;
+  color: rgb(68, 68, 68);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.media-list,
+.links-list {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-list li a {
+  color: rgb(59, 59, 59);
+  font-size: 2.75rem;
+  transition: all 0.2s linear;
+}
+
+.media-list li a:hover {
+  color: rgb(207, 221, 81);
+}
+
+.links-list li {
+  margin: 2rem 0;
+}
+
+.links-list li a {
+  color: rgb(63, 63, 63);
+  transition: all 0.2s linear;
+}
+
+.links-list li a:hover {
+  color: rgb(207, 221, 81);
+}
+
+.border-around {
+  border-left: 2px solid rgb(121, 120, 120);
+  border-right: 2px solid rgb(121, 121, 121);
+  padding: 0 0.75rem;
+}
+
+footer p {
+  text-align: center;
+  width: 60%;
+  margin: 2rem auto;
+  font-size: 1.75rem;
+}
+
+
+/* media query - @ */
+
+@media screen and (max-width: 1138px) {
+  .header-center h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+
+  .header-center p {
+    font-size: 1.25rem;
+    margin: 2.25rem 0;
+  }
+
+  .btn {
+    padding: 0.75rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  .section-1 {
+    margin: 3rem 0;
+    padding: 2rem;
+  }
+
+  .content-11-title {
+    padding: 1.75rem;
+    width: 40%;
+  }
+
+  .content-11-title h3 {
+    font-size: 2rem;
+    color: rgb(35, 36, 36);
+  }
+
+  .content-11-title span i {
+    font-size: 1.65rem;
+    margin-top: 2.785rem;
+  }
+
+  .content-11-text p {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    font-size: 1.25rem;
+  }
+
+
+}
+
+@media screen and (max-width: 850px) {
+  .header-center h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+
+  .header-center p {
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+
+  .btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .section-1 {
+    margin: 2.5rem 0;
+    padding: 1.75rem;
+  }
+
+  .content-11-title {
+    padding: 1.75rem;
+    width: 40%;
+  }
+
+  .content-11-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-11-title span i {
+    font-size: 1.25rem;
+    margin-top: 2.25rem;
+  }
+
+  .content-11-text p {
+    position: absolute;
+    right: 8%;
+    bottom: 25%;
+    font-size: 1rem;
+  }
+
+
+  .content-12 {
+    margin: 4rem 0 2rem 0;
+  }
+
+  .content-12 h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .content-13 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .item-green{
+    margin-top: 0;
+  }
+  .content-item-13 {
+    padding: 3rem 2rem;
+  }
+
+  .content-item-13 h4 {
+    font-size: 1.75rem;
+  }
+
+  .content-item-13 p {
+    font-size: 1rem;
+  }
+
+  .section-2 {
+    margin: 1rem 0 0;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  
+  .content-item-2 h2 {
+    font-size: 2.15rem;
+  }
+  
+  .content-item-2 p {
+    font-size: 1rem;
+    padding:  0;
+  }
+  
+
+  
+  footer {
+    padding: 1.75rem;
+  }
+
+  .media-list li a {
+    font-size: 2rem;
+  }
+
+  .links-list li {
+    margin: 0.5rem;
+  }
+
+  .links-list li a {
+    font-size: 0.75rem;
+  }
+
+  footer p {
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+  
+
+}
+
+
+@media screen and (max-width: 724px) {
+
+  .header-center h1 {
+    font-size: 1.75rem;
+  }
+
+  .header-center p {
+    font-size: 0.75rem;
+    margin: 1rem 0;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .section-1 {
+    margin: 2.5rem 0;
+    padding: 1.75rem;
+  }
+
+  .content-11-title {
+    padding: 1.75rem;
+    width: 40%;
+  }
+
+  .content-11-title h3 {
+    font-size: 1.15rem;
+  }
+
+  .content-11-title span i {
+    font-size: 0.85rem;
+    padding: 0.765rem;
+    margin-top: 2rem;
+  }
+
+  .content-11-text p {
+    position: absolute;
+    right: 7%;
+    bottom: 30%;
+    font-size: 0.75rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+
+  .content-12 {
+    margin: 3rem 0 2rem 0;
+  }
+
+  .content-12 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .content-item-13 {
+    padding: 2rem;
+  }
+
+  .content-item-13 h4 {
+    font-size: 1.5rem;
+  }
+
+  .content-item-13 p {
+    font-size: 0.75rem;
+  }
+
+  .section-2 {
+    margin: 1rem 0 0;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  
+  .content-item-2 h2 {
+    font-size: 1.75rem;
+  }
+  
+  .content-item-2 p {
+    font-size: 0.75rem;
+  }
+  
+  footer {
+    padding: 1.75rem;
+  }
+
+  .media-list li a {
+    font-size: 2rem;
+  }
+
+  .links-list li {
+    margin: 0.5rem;
+  }
+
+  .links-list li a {
+    font-size: 0.75rem;
+  }
+
+  footer p {
+    margin: 1rem auto;
+    font-size: 0.75rem;
+  }
+  
+}
+
+@media screen and (max-width: 568px) {
+  header {
+    padding: 5rem 0;
+  }
+  .header-center h1 {
+    font-size: 1.15rem;
+  }
+
+  .header-center p {
+    font-size: 0.65rem;
+  }
+
+  .content-11-title h3 {
+    font-size: 0.75rem;
+  }
+
+  .content-11-title span i {
+    font-size: 0.85rem;
+    margin-top: 1.75rem;
+  }
+
+  .content-11-text p {
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+    font-size: 0.65rem;
+  }
+  .content-item-2 h2 {
+    font-size: 1.5rem;
+  }
+  .content-item-13 h4 {
+    font-size: 1.25rem;
+  }
+
+  .media-list li a {
+    font-size: 1.75rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    padding: 4rem 0;
+  }
+  .header-center h1 {
+    font-size: 1rem;
+  }
+
+  .header-center p {
+    font-size: 0.5rem;
+  }
+
+  .content-11-title h3 {
+    font-size: 0.65rem;
+  }
+
+  .content-11-title span i {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .content-11-text p {
+    position: absolute;
+    right: 4%;
+    bottom: 30%;
+    font-size: 0.55rem;
+  }
+  .content-item-2 h2 {
+    font-size: 1.15rem;
+  }
+  .content-item-13 h4 {
+    font-size: 1.25rem;
+  }
+
+  .media-list li a {
+    font-size: 1.75rem;
+  }
+  .links-list li {
+    margin: 0.5rem;
+    height: auto;
+  }
+
+  .links-list li a {
+    font-size: 0.65rem;
+    height: auto;
+  }
+}
